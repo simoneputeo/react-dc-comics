@@ -219,3 +219,25 @@ footer .lower-footer .container .row nav ul li.buttondx {
   padding: 1rem;
   font-size: 1.5rem;
 }
+
+.alert {
+  border: currentColor 1px solid;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.alert.alert-info {
+  background-color: aliceblue;
+  color: blue;
+}
+
+.alert.alert-danger {
+  background-color: #e4b8b8;
+  color: red;
+}
+
+.alert.alert-success {
+  background-color: #b8e4bd;
+  color: green;
+}

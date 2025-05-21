@@ -1,13 +1,23 @@
+import Alert from "../ui/Alert";
+
+
 export default function Main() {
     return <main>
         <div className="upper-main">
 
             <div className="container">
+
                 <div className="content">
                     --&gt; Content goes here &lt;--
                 </div>
             </div>
         </div>
+        <Alert type="danger">
+            lista di errori
+            <ul className="discs">
+                <li>errore 1: text err</li>
+            </ul>
+        </Alert>
         <div className="lower-main">
             <div className="container">
                 <nav>
