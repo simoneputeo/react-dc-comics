@@ -1,7 +1,8 @@
 import Alert from "../ui/Alert";
+import CardGallery from "../ui/CardGallery";
 
 
-export default function Main() {
+export default function Main(comics) {
     return <main>
         <div className="upper-main">
 
@@ -12,6 +13,7 @@ export default function Main() {
                 </div>
             </div>
         </div>
+        <CardGallery comics={comics} />
         <Alert type="danger">
             lista di errori
             <ul className="discs">
