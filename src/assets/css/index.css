@@ -96,6 +96,55 @@ main .upper-main .container .content {
   padding-bottom: 3rem;
 }
 
+section#comics-section {
+  background-color: #1c1c1c;
+}
+
+section#comics-section .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+}
+
+.card {
+  overflow: hidden;
+  text-align: center;
+  flex: 0 1 calc(14.28% - 20px); /* 7 items per row minus gap */
+  min-width: 140px;
+  max-width: 160px;
+}
+
+.card-content {
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-media {
+  overflow: hidden;
+  max-width: 160px;
+  max-height: 160px;
+}
+.card-media img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-media img[alt="Action Comics #1000: The Deluxe Edition"] {
+  position: relative;
+  object-fit: cover;
+  transform: scale(1.5) translateY(25px);
+}
+
+.card-media img[alt="Catwoman Vol. 1: Copycats"] {
+  position: relative;
+  object-fit: cover;
+  y: 90px;
+  transform: scale(1.6) translateY(29px);
+}
+
 main .lower-main {
   background-color: #0282f9;
   color: white;
@@ -106,6 +155,9 @@ main .lower-main .container nav ul {
   justify-content: space-between;
   align-items: center;
 }
+main .lower-main .container nav ul li {
+  flex-basis: 19%;
+}
 
 main .lower-main .container nav ul li a img {
   max-width: 55px;
@@ -114,12 +166,15 @@ main .lower-main .container nav ul li a img {
 }
 
 main .lower-main .container nav ul li a {
-  border: 4px dashed lime;
   font-size: 1rem;
   display: flex;
   padding-top: 3rem;
   align-items: center;
   padding-bottom: 3rem;
+}
+
+main .lower-main .container nav ul li.grow1 {
+  flex-grow: 1;
 }
 
 /* Footer */

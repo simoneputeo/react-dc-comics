@@ -1,11 +1,11 @@
-export default function ComicCard({ comics }) {
+export default function ComicCard({ title, image }) {
     return (
         <div className="col">
             <div className="card">
                 <div className="card-media">
-                    <img src={comic.thumb} alt={comic.title} />
+                    <img src={image} alt={title} />
                 </div>
-                <div className="card-content">{comic.title}</div>
+                <div className="card-content">{title}</div>
             </div>
         </div>
     );

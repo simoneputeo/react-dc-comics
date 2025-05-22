@@ -1,5 +1,3 @@
-console.log(comics)
-
 import ComicCard from "./ComicCard";
 
 export default function CardGallery({ comics }) {
