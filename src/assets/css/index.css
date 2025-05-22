@@ -219,8 +219,19 @@ footer .lower-footer .container .row nav ul li.buttondx {
   padding: 1rem;
   font-size: 1.5rem;
 }
+.p-4 {
+  padding: 4px;
+}
+.rounded-md {
+  border-radius: 10px;
+}
+.bg-red-100 {
+  background-color: red;
+}
 
 .alert {
+  display: flex;
+  justify-content: center;
   border: currentColor 1px solid;
   padding: 1rem 2rem;
   margin: auto;
